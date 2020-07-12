@@ -80,3 +80,7 @@ console.log(taurusxinChain.validateChain())
 // try to change the block
 taurusxinChain.chain[1].data = '转账一百个十元'
 console.log(taurusxinChain.validateChain())
+
+// try to change the block hash
+taurusxinChain.chain[1].hash = taurusxinChain.chain[1].computeHash()
+console.log(taurusxinChain.validateChain())
